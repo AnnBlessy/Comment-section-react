@@ -1,12 +1,12 @@
-# React + Vite
+# Comment System Using Component and Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To build a comment section, you'll need components for displaying comments, creating new comments, and potentially managing them. Here's a breakdown of common components and their roles: Core Components:CommentList (or Comments):This component is responsible for rendering a list of all comments, potentially with pagination or infinite scrolling for large comment threads. Comment:Represents a single comment, displaying the author, content, timestamp, and any actions (like likes, replies). CommentForm:Allows users to submit new comments, typically including a text input field and a submit button. ReplyForm:If implementing nested replies, this component would be used to submit a reply to a specific comment. UserAvatar:Displays the user's profile picture, which can be a separate component or part of the Comment component. Optional Components:CommentActions: A component to handle actions like liking, replying, or deleting a comment. SortOptions: Allows users to sort comments by date, popularity, or other criteria. 
 
-Currently, two official plugins are available:
+CommentThread: If implementing nested replies, this component could be used to render a single thread of comments, including parent comments and their replies. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## OUTPUT
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![alt text](image.png)
+
+![alt text](image-1.png)
